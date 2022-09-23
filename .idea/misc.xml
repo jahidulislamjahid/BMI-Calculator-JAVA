@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/drawable-v24/blurMF.xml" value="0.188" />
+        <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/drawable-v24/blurmf.xml" value="0.188" />
+        <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/drawable-v24/buttonbg.xml" value="0.188" />
+        <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/drawable-v24/focusMF.xml" value="0.188" />
+        <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/drawable-v24/focusmf.xml" value="0.188" />
+        <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/drawable-v24/plusminus.xml" value="0.188" />
         <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/drawable/cardbackground.xml" value="0.188" />
         <entry key="..\:/Users/Zahid/Downloads/NativePractice/BMICalculator/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
       </map>

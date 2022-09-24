@@ -76,35 +76,35 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/male"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_toStartOf="@+id/centervertical"
-        android:background="@drawable/blurmf"
         android:layout_above="@+id/heightlayout"
-        android:layout_marginBottom="35dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/male">
+        android:layout_marginBottom="35dp"
+        android:layout_toStartOf="@+id/centervertical"
+        android:background="@drawable/blurmf">
 
         <ImageView
-            android:layout_width="170px"
-            android:layout_height="170px"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_above="@+id/textmale"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_launcher_background"
-            android:layout_centerInParent="true"/>
-        
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/male" />
+
         <TextView
+            android:id="@+id/textmale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:id="@+id/textmale"
-            android:text="Male"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="10dp"
-            android:textAlignment="center"/>
+            android:text="Male"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -119,12 +119,12 @@
         android:id="@+id/female">
 
         <ImageView
-            android:layout_width="170px"
-            android:layout_height="170px"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_above="@+id/textfemale"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_launcher_background"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/female" />
 
         <TextView
             android:layout_width="match_parent"
@@ -199,10 +199,10 @@
             android:layout_marginBottom="10dp">
 
             <ImageView
+                android:id="@+id/minusweight"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:id="@+id/minusweight"
-                android:src="@drawable/ic_launcher_background"/>
+                android:src="@drawable/minus" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -218,7 +218,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:id="@+id/plussweight"
-                android:src="@drawable/ic_launcher_background"/>
+                android:src="@drawable/add"/>
         </RelativeLayout>
 
     </RelativeLayout>
@@ -267,10 +267,10 @@
             android:layout_marginBottom="10dp">
 
             <ImageView
+                android:id="@+id/minusage"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:id="@+id/minusage"
-                android:src="@drawable/ic_launcher_background"/>
+                android:src="@drawable/minus" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -286,7 +286,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:id="@+id/plussage"
-                android:src="@drawable/ic_launcher_background"/>
+                android:src="@drawable/add"/>
         </RelativeLayout>
 
     </RelativeLayout>

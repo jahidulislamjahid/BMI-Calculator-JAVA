@@ -14,7 +14,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    android.widget.Button mcalculatebmi;
+     android.widget.Button mcalculatebmi;
+    //Button mcalculatebmi;
 
     TextView mcurrentheight;
     TextView mcurrentage, mcurrentweight;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
-        mcalculatebmi.findViewById(R.id.calculatebmi);
+        mcalculatebmi=findViewById(R.id.calculatebmi);
         mcurrentage=findViewById(R.id.currentage);
         mcurrentweight=findViewById(R.id.currentweight);
         mcurrentheight=findViewById(R.id.currentheight);

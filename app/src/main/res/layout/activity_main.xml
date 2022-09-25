@@ -50,6 +50,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="20dp"
+            android:thumbTint="@color/white"
             android:progressTint="#FFFFFF" />
 
         <TextView
@@ -142,18 +143,18 @@
 
 
     <android.widget.Button
+        android:id="@+id/calculatebmi"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:id="@+id/calculatebmi"
         android:layout_alignParentBottom="true"
-        android:textSize="15sp"
-        android:layout_marginBottom="15dp"
-        android:text="Calculate Your BMI"
-        android:textColor="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/buttonbg"
-        android:textStyle="bold"/>
+        android:text="Calculate Your BMI"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
 
     <RelativeLayout

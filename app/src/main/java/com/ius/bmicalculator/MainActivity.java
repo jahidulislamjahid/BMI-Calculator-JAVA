@@ -24,12 +24,12 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout mmale, mfemale;
 
     int intweight=55;
-    int intage=22;
+    int intage=25;
     int currentprogress;
     String mintprogress="170";
     String typeofuser="0";
     String weight2="55";
-    String age2="22";
+    String age2="25";
 
 
     @Override
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.focusmf));
-                mfemale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.focusmf));
+                mfemale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.blurmf));
                 typeofuser="Male";
             }
         });
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mfemale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.focusmf));
-                mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.focusmf));
+                mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.blurmf));
                 typeofuser="Female";
             }
         });

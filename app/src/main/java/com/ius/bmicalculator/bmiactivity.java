@@ -27,6 +27,7 @@ public class bmiactivity extends AppCompatActivity {
     String weight;
     float intheight,intweight;
     RelativeLayout mbackground;
+    RelativeLayout mtextcolor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +50,8 @@ public class bmiactivity extends AppCompatActivity {
         mrecalculatebmi=findViewById(R.id.recalculatebmi);
 
 
-        height=intent.getStringExtra("height");
-        weight=intent.getStringExtra("weight");
+        height=intent.getStringExtra("Height");
+        weight=intent.getStringExtra("Weight");
         intheight=Float.parseFloat(height);
         intweight=Float.parseFloat(weight);
 
@@ -62,33 +63,33 @@ public class bmiactivity extends AppCompatActivity {
 
         if(intbmi<16){
             mbmicategory.setText("Severe Thinness");
-            mbackground.setBackgroundColor(Color.RED);
-            mimageview.setImageResource(R.drawable.crosss);
+            mbackground.setBackground(getDrawable(R.drawable.resultred));
+            mimageview.setImageResource(R.drawable.cross);
         }
         else if(intbmi<16.9 && intbmi>16){
             mbmicategory.setText("Moderate Thinness");
-            mbackground.setBackgroundColor(Color.RED);
+            mbackground.setBackground(getDrawable(R.drawable.resultred));
             mimageview.setImageResource(R.drawable.warning);
         }
         else if(intbmi<18.4 && intbmi>17){
             mbmicategory.setText("Mild Thinness");
-            mbackground.setBackgroundColor(Color.RED);
+            mbackground.setBackground(getDrawable(R.drawable.resultred));
             mimageview.setImageResource(R.drawable.warning);
         }
         else if(intbmi<25 && intbmi>18.4){
             mbmicategory.setText("Normal");
-            mbackground.setBackgroundColor(Color.YELLOW);
-            mimageview.setImageResource(R.drawable.ok);
+            mbackground.setBackground(getDrawable(R.drawable.resultgreen));
+            mimageview.setImageResource(R.drawable.tick);
         }
         else if(intbmi<29.4 && intbmi>25){
             mbmicategory.setText("Over Weight");
-            mbackground.setBackgroundColor(Color.RED);
+            mbackground.setBackground(getDrawable(R.drawable.resultred));
             mimageview.setImageResource(R.drawable.warning);
         }
         else{
             mbmicategory.setText("Obese Class 1");
-            mbackground.setBackgroundColor(Color.YELLOW);
-            mimageview.setImageResource(R.drawable.ok);
+            mbackground.setBackground(getDrawable(R.drawable.resultgreen));
+            mimageview.setImageResource(R.drawable.tick);
         }
 
         mgender.setText(intent.getStringExtra("gender"));
@@ -99,8 +100,8 @@ public class bmiactivity extends AppCompatActivity {
         mrecalculatebmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Intent=new Intent(bmiactivity.this, MainActivity.class);
-                startActivity(Intent);
+                Intent intent=new Intent(bmiactivity.this, MainActivity.class);
+                startActivity(intent);
                 finish();
             }
         });
